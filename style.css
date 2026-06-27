@@ -8,7 +8,12 @@
   --line: rgba(255,255,255,.16);
   --text: #fff7fb;
   --muted: rgba(255,247,251,.68);
-  --pink: #ff6aa8;
+
+  --purple-light: #b18cff;
+  --purple: #8b5cf6;
+  --purple-dark: #6d28d9;
+  --purple-glow: rgba(139, 92, 246, .35);
+
   --gold: #f9d18a;
 }
 
@@ -18,9 +23,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(circle at 20% 0%, rgba(255, 106, 168, .25), transparent 34%),
+    radial-gradient(circle at 20% 0%, rgba(139, 92, 246, .28), transparent 34%),
     radial-gradient(circle at 90% 15%, rgba(249, 209, 138, .18), transparent 28%),
-    linear-gradient(180deg, #1a0820 0%, #110715 45%, #07050b 100%);
+    linear-gradient(180deg, #16081f 0%, #100718 45%, #07050b 100%);
 }
 
 .app {
@@ -46,8 +51,8 @@ body {
 
 h1 {
   margin: 0;
-  font-size: 34px;
-  letter-spacing: .03em;
+  font-size: 42px;
+  letter-spacing: .04em;
 }
 
 .sub, .hint {
@@ -70,8 +75,8 @@ h1 {
   left: 17px;
   top: 17px;
   border-radius: 999px;
-  background: radial-gradient(circle at 35% 30%, #ffe1ad, #ff8ab8 48%, #51235d 100%);
-  box-shadow: 0 0 30px rgba(255, 106, 168, .45);
+  background: radial-gradient(circle at 35% 30%, #ffe1ad, #b18cff 48%, #51235d 100%);
+  box-shadow: 0 0 30px rgba(139, 92, 246, .48);
 }
 
 .ring {
@@ -86,7 +91,7 @@ h1 {
 }
 
 .panel, .positionPanel {
-  border: 1px solid var(--line);
+  border: 1px solid rgba(177, 140, 255, .22);
   border-radius: 22px;
   background: var(--panel);
   padding: 16px;
@@ -106,11 +111,11 @@ button, .fileBtn {
   border-radius: 999px;
   padding: 12px 18px;
   color: #fff;
-  background: linear-gradient(135deg, #ff5fa6, #bc155f);
+  background: linear-gradient(135deg, #b18cff, #8b5cf6 45%, #6d28d9);
   font-weight: 700;
   font-size: 15px;
   cursor: pointer;
-  box-shadow: 0 10px 26px rgba(188, 21, 95, .22);
+  box-shadow: 0 10px 26px rgba(109, 40, 217, .32);
 }
 
 .fileBtn {
@@ -125,7 +130,7 @@ button, .fileBtn {
 .secondary {
   background: rgba(255,255,255,.11);
   box-shadow: none;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(177, 140, 255, .28);
 }
 
 .small {
@@ -147,14 +152,15 @@ button, .fileBtn {
 
 .segmented button {
   background: rgba(255,255,255,.08);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(177, 140, 255, .22);
   box-shadow: none;
   padding: 10px 8px;
 }
 
 .segmented button.active {
-  background: rgba(255, 106, 168, .9);
-  border-color: rgba(255,255,255,.28);
+  background: linear-gradient(135deg, #b18cff, #8b5cf6 45%, #6d28d9);
+  border-color: rgba(177, 140, 255, .55);
+  box-shadow: 0 8px 22px rgba(109, 40, 217, .24);
 }
 
 .cardStage {
@@ -170,7 +176,7 @@ button, .fileBtn {
   flex-direction: column;
   justify-content: space-between;
   background:
-    radial-gradient(circle at 50% 28%, rgba(255, 156, 200, .22), transparent 35%),
+    radial-gradient(circle at 50% 28%, rgba(177, 140, 255, .24), transparent 35%),
     linear-gradient(160deg, #22123f, #101936 48%, #080812 100%);
   box-shadow: 0 24px 50px rgba(0,0,0,.34), inset 0 0 0 1px rgba(255,255,255,.05);
   position: relative;
@@ -230,12 +236,13 @@ button, .fileBtn {
   padding: 8px 12px;
   font-size: 13px;
   background: rgba(255,255,255,.08);
-  border: 1px solid var(--line);
+  border: 1px solid rgba(177, 140, 255, .22);
   box-shadow: none;
 }
 
 .tabs button.active {
-  background: rgba(249, 209, 138, .22);
+  background: rgba(177, 140, 255, .24);
+  border-color: rgba(177, 140, 255, .48);
 }
 
 .positionResult {
@@ -248,7 +255,7 @@ button, .fileBtn {
 }
 
 @media (max-width: 420px) {
-  h1 { font-size: 28px; }
+  h1 { font-size: 36px; }
   .saturn { width: 68px; height: 68px; }
   .planet { width: 42px; height: 42px; left: 13px; top: 13px; }
   .ring { width: 78px; left: -5px; top: 22px; }
