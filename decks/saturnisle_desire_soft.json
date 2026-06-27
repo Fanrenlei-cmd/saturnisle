@@ -1,0 +1,146 @@
+{
+  "maleCards": [
+    {
+      "level": "light",
+      "content": "认真看她十秒，说一句今天最想夸她的话"
+    },
+    {
+      "level": "light",
+      "content": "牵起她的手，轻轻捏一下，再说一句只给她听的小暗号"
+    },
+    {
+      "level": "light",
+      "content": "让她选一个称呼，你接下来三分钟都要这样叫她"
+    },
+    {
+      "level": "light",
+      "content": "给她一个慢一点的拥抱，抱完以后不许马上松开"
+    },
+    {
+      "level": "light",
+      "content": "摸摸她的头发，夸一个你刚刚注意到的小细节"
+    },
+    {
+      "level": "light",
+      "content": "和她对视，谁先笑出来谁就要说一句真心话"
+    },
+    {
+      "level": "stimulating",
+      "content": "贴近她耳边，用很轻的声音说一句只给她听的暧昧话"
+    },
+    {
+      "level": "stimulating",
+      "content": "牵着她的手放到你心口，让她感受十秒你的心跳"
+    },
+    {
+      "level": "stimulating",
+      "content": "慢慢靠近她，停在只差一点点的位置，等她先笑或先靠近"
+    },
+    {
+      "level": "stimulating",
+      "content": "让她闭上眼睛，你选择一个不越界的位置轻轻亲一下"
+    },
+    {
+      "level": "intense",
+      "content": "把她轻轻圈进怀里，低声告诉她今晚她会被认真偏爱"
+    },
+    {
+      "level": "intense",
+      "content": "让她指挥你接下来一分钟的亲密动作，你只能照做"
+    },
+    {
+      "level": "intense",
+      "content": "用亲吻和停顿制造一次期待感，但全程以她的反应为准"
+    },
+    {
+      "level": "intense",
+      "content": "抱住她的腰，让她感受到被包围，但她随时可以说停"
+    }
+  ],
+  "femaleCards": [
+    {
+      "level": "light",
+      "content": "认真看他十秒，说一句今天最想夸他的话"
+    },
+    {
+      "level": "light",
+      "content": "牵起他的手，轻轻捏一下，再说一句只给他听的小暗号"
+    },
+    {
+      "level": "light",
+      "content": "让他选一个称呼，你接下来三分钟都要这样叫他"
+    },
+    {
+      "level": "light",
+      "content": "给他一个慢一点的拥抱，抱完以后不许马上松开"
+    },
+    {
+      "level": "light",
+      "content": "摸摸他的头发，夸一个你刚刚注意到的小细节"
+    },
+    {
+      "level": "light",
+      "content": "和他对视，谁先笑出来谁就要说一句真心话"
+    },
+    {
+      "level": "stimulating",
+      "content": "贴近他耳边，用很轻的声音说一句只给他听的暧昧话"
+    },
+    {
+      "level": "stimulating",
+      "content": "牵着他的手放到你心口，让他感受十秒你的心跳"
+    },
+    {
+      "level": "stimulating",
+      "content": "慢慢靠近他，停在只差一点点的位置，等他先笑或先靠近"
+    },
+    {
+      "level": "stimulating",
+      "content": "让他闭上眼睛，你选择一个不越界的位置轻轻亲一下"
+    },
+    {
+      "level": "intense",
+      "content": "把他轻轻拉进怀里，低声告诉他今晚他会被认真偏爱"
+    },
+    {
+      "level": "intense",
+      "content": "让他指挥你接下来一分钟的亲密动作，你只能照做"
+    },
+    {
+      "level": "intense",
+      "content": "用亲吻和停顿制造一次期待感，但全程以他的反应为准"
+    },
+    {
+      "level": "intense",
+      "content": "抱住他的腰，让他感受到被包围，但他随时可以说停"
+    }
+  ],
+  "positionList": {
+    "categories": {
+      "kiss": "亲吻",
+      "touch": "触碰",
+      "whisper": "耳语",
+      "atmosphere": "氛围"
+    },
+    "kiss": [
+      "亲一下就停住，看对方会不会继续",
+      "从额头亲到鼻尖，再停在嘴角旁边",
+      "用一个很轻的吻作为奖励"
+    ],
+    "touch": [
+      "十指相扣三十秒",
+      "用指尖在对方掌心写一个字",
+      "抱住对方的腰，等对方主动靠近"
+    ],
+    "whisper": [
+      "在耳边说一句只给对方听的夸奖",
+      "说一个今晚最想被对方记住的瞬间",
+      "说一句带占有欲但不过界的话"
+    ],
+    "atmosphere": [
+      "调暗灯光，安静对视十秒",
+      "让对方靠在你肩上，什么都不说",
+      "由赢家设置下一轮的亲密规则"
+    ]
+  }
+}

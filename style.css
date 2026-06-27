@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #120716;
+  --panel: rgba(255,255,255,.08);
+  --line: rgba(255,255,255,.16);
+  --text: #fff7fb;
+  --muted: rgba(255,247,251,.68);
+  --pink: #ff6aa8;
+  --gold: #f9d18a;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 0%, rgba(255, 106, 168, .25), transparent 34%),
+    radial-gradient(circle at 90% 15%, rgba(249, 209, 138, .18), transparent 28%),
+    linear-gradient(180deg, #1a0820 0%, #110715 45%, #07050b 100%);
+}
+
+.app {
+  width: min(720px, 100%);
+  margin: 0 auto;
+  padding: 22px 18px 36px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+  padding: 16px 2px 18px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--gold);
+  letter-spacing: .22em;
+  font-size: 12px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 34px;
+  letter-spacing: .03em;
+}
+
+.sub, .hint {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.saturn {
+  width: 82px;
+  height: 82px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.planet {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  left: 17px;
+  top: 17px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 35% 30%, #ffe1ad, #ff8ab8 48%, #51235d 100%);
+  box-shadow: 0 0 30px rgba(255, 106, 168, .45);
+}
+
+.ring {
+  position: absolute;
+  width: 92px;
+  height: 28px;
+  left: -5px;
+  top: 27px;
+  border: 3px solid rgba(249, 209, 138, .8);
+  border-radius: 50%;
+  transform: rotate(-18deg);
+}
+
+.panel, .positionPanel {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--panel);
+  padding: 16px;
+  backdrop-filter: blur(14px);
+}
+
+.toolbar, .sectionHead {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+button, .fileBtn {
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 18px;
+  color: #fff;
+  background: linear-gradient(135deg, #ff5fa6, #bc155f);
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  box-shadow: 0 10px 26px rgba(188, 21, 95, .22);
+}
+
+.fileBtn {
+  display: inline-flex;
+  align-items: center;
+}
+
+.fileBtn input {
+  display: none;
+}
+
+.secondary {
+  background: rgba(255,255,255,.11);
+  box-shadow: none;
+  border: 1px solid var(--line);
+}
+
+.small {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+.controls {
+  display: grid;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.segmented {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+  gap: 8px;
+}
+
+.segmented button {
+  background: rgba(255,255,255,.08);
+  border: 1px solid var(--line);
+  box-shadow: none;
+  padding: 10px 8px;
+}
+
+.segmented button.active {
+  background: rgba(255, 106, 168, .9);
+  border-color: rgba(255,255,255,.28);
+}
+
+.cardStage {
+  padding: 12px 0 16px;
+}
+
+.card {
+  min-height: 310px;
+  border-radius: 28px;
+  border: 1px solid rgba(249, 209, 138, .35);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:
+    radial-gradient(circle at 50% 28%, rgba(255, 156, 200, .22), transparent 35%),
+    linear-gradient(160deg, #22123f, #101936 48%, #080812 100%);
+  box-shadow: 0 24px 50px rgba(0,0,0,.34), inset 0 0 0 1px rgba(255,255,255,.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border: 1px solid rgba(249, 209, 138, .34);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.cardType, .cardFooter {
+  color: var(--gold);
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.card h2 {
+  font-size: 28px;
+  line-height: 1.45;
+  text-align: center;
+  font-weight: 700;
+  margin: 30px 0;
+  white-space: pre-wrap;
+}
+
+.drawBtn {
+  width: 100%;
+  font-size: 20px;
+  padding: 16px 20px;
+  margin-bottom: 16px;
+}
+
+.positionPanel {
+  margin-top: 4px;
+}
+
+.positionPanel h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 14px 0;
+}
+
+.tabs button {
+  padding: 8px 12px;
+  font-size: 13px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid var(--line);
+  box-shadow: none;
+}
+
+.tabs button.active {
+  background: rgba(249, 209, 138, .22);
+}
+
+.positionResult {
+  min-height: 56px;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.08);
+  line-height: 1.6;
+  color: #fffafc;
+}
+
+@media (max-width: 420px) {
+  h1 { font-size: 28px; }
+  .saturn { width: 68px; height: 68px; }
+  .planet { width: 42px; height: 42px; left: 13px; top: 13px; }
+  .ring { width: 78px; left: -5px; top: 22px; }
+  .card { min-height: 280px; padding: 24px; }
+  .card h2 { font-size: 24px; }
+}

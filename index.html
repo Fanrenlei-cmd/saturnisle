@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Saturnisle Cards｜土星小岛牌桌</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">SATURNISLE</p>
+        <h1>土星小岛牌桌</h1>
+        <p class="sub">导入 JSON，抽一张属于小岛的牌。</p>
+      </div>
+      <div class="saturn" aria-hidden="true">
+        <div class="planet"></div>
+        <div class="ring"></div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="toolbar">
+        <button id="loadDefaultBtn" class="secondary">载入内置牌组</button>
+        <label class="fileBtn">
+          导入 JSON
+          <input id="fileInput" type="file" accept=".json,application/json" />
+        </label>
+      </div>
+      <p id="deckInfo" class="hint">还没有导入数据。</p>
+    </section>
+
+    <section class="controls">
+      <div class="segmented">
+        <button data-gender="female" class="active">女生版</button>
+        <button data-gender="male">男生版</button>
+      </div>
+      <div class="segmented">
+        <button data-level="all" class="active">全部</button>
+        <button data-level="light">轻度</button>
+        <button data-level="stimulating">升温</button>
+        <button data-level="intense">强烈</button>
+      </div>
+    </section>
+
+    <section class="cardStage">
+      <article id="card" class="card">
+        <p class="cardType">等待抽牌</p>
+        <h2>先导入或载入一份 JSON</h2>
+        <p class="cardFooter">Saturnisle Cards</p>
+      </article>
+    </section>
+
+    <button id="drawBtn" class="drawBtn">抽一张</button>
+
+    <section class="positionPanel">
+      <div class="sectionHead">
+        <h2>动作列表</h2>
+        <button id="drawPositionBtn" class="secondary small">抽一个动作</button>
+      </div>
+      <div id="positionTabs" class="tabs"></div>
+      <div id="positionResult" class="positionResult">导入牌组后可抽取动作。</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
